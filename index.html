@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CodeSpectra - Project Upload Portal</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>CodeSpectra</h1>
+    </header>
+    <main>
+        <section class="upload-section">
+            <h2>Upload Project</h2>
+            <form method="post" enctype="multipart/form-data" action="/upload">
+                Project Name: <input type="text" name="project_name"><br>
+                Author Name: <input type="text" name="author_name"><br>
+                Problem Statement: <textarea name="problem_statement"></textarea><br>
+                <input type="file" name="file"><br>
+                <input type="submit" value="Upload">
+            </form>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CodeSpectra - Project Summaries</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        table {
+            width: 90%;
+            margin: auto;
+            border-collapse: collapse;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #004e92;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Code Spectra</h1>
+    </header>
+    <main>
+        <h2>Project Summaries</h2>
+        <table>
+            <tr>
+                <th>Project Name</th>
+                <th>Author Name</th>
+                <th>Problem Statement</th>
+                <th>Detected Languages</th>
+                <th>Detected Imports</th>
+                <th>Detected Technologies</th>
+                <th>Detected Data Structures</th>
+            </tr>
+            {% for project in projects %}
+                <tr>
+                    <td>{{ project[1] }}</td>
+                    <td>{{ project[2] }}</td>
+                    <td>{{ project[3] }}</td>
+                    <td>{{ project[4] }}</td>
+                    <td>{{ project[5] }}</td>
+                    <td>{{ project[6] }}</td>
+                    <td>{{ project[7] }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </main>
+</body>
+</html>
