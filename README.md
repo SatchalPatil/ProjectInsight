@@ -1,4 +1,4 @@
-problem statement : develop an application that takes all files of the project as input and analyses what types of technology , 
+problem statement : develop an application that takes file of the project as input and analyses what types of technology , 
 data structures , packages , modules, header files etc. are used in the project ,
 Store this data in a database that shows the project name functionalities , technology.
 
