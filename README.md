@@ -1,35 +1,48 @@
-problem statement : develop an application that takes file of the project as input and analyses what types of technology , 
-data structures , packages , modules, header files etc. are used in the project ,
-Store this data in a database that shows the project name functionalities , technology.
+# Project Analyzer
 
-use case :  in colleges students make large projects but the teachers and professors can not go through each and every 
-line of code and see what functionalities and algorithms or technologies the students have used.
+This project is a web application that analyzes uploaded project files to detect:
+- **Programming Language**
+- **Technologies/Frameworks** (e.g., Flask, Django, Spring, Boost)
+- **Data Structures** (e.g., Lists, Dictionaries, Linked Lists)
+- **Algorithms**
+- **Header Files/Imports**
 
-Requirements:
+The application includes a **Flask** backend and a simple frontend built with **HTML** and **CSS**. Detected data is stored in an SQLite database and displayed on the web interface.
 
-Functionalities Detection:
+---
 
-language detection
+## Features
 
-technology detection
+1. **Upload Portal**: Allows users to upload project files.
+2. **Analysis**:
+   - Detects the programming language used.
+   - Identifies technologies/frameworks.
+   - Finds common data structures and algorithms.
+   - Extracts header files and imports.
+3. **Project Summaries**: Displays analysis results, including:
+   - Project name, author, and problem statement.
+   - Detected technologies, data structures, and algorithms.
 
-data Structures and Algorithm detection
+---
 
-header files and import files detection
+## Tech Stack
 
+### Backend
+- **Python** (Flask Framework)
+- **SQLite** (Database)
 
-Database management:
+### Frontend
+- **HTML, CSS, JavaScript**
 
-project name , author name , problem statement 
+---
 
-details about detected technologies, data structures, algorithms, and other relevant data
+## Installation
 
+1. Clone the repository:
 
-User interface:
-
-Project upload portal
-
-view summaries and Functionalities for professors
+   ```bash
+   git clone https://github.com/SatchalPatil/ProjectInsight.git
+   cd ProjectInsight
 
 
 ![WhatsApp Image 2024-11-26 at 1 34 15 AM](https://github.com/user-attachments/assets/00028f06-69c8-4de2-be82-9d9dbe14d6d1)
