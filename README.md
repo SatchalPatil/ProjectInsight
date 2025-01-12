@@ -32,7 +32,7 @@ The application includes a **Flask** backend and a simple frontend built with **
 - **SQLite** (Database)
 
 ### Frontend
-- **HTML, CSS, JavaScript**
+- **HTML, CSS**
 
 ---
 
